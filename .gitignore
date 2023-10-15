@@ -1,0 +1,13 @@
+# .gitignore
+
+# Directories
+dist/
+node_modules/
+.idea
+
+# Key files
+private.pem
+public.pem
+
+# Packed extension
+*.crx

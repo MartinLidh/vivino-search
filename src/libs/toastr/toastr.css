@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+.toast-message {
+    position: fixed;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 999999;
+    max-width: 40%;
+    text-align: left;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    background-color: #f7f7f7;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.toast-message img.toast-image {
+    width: 80px;
+    float: left;
+    margin-right: 20px;
+}
+
+.toast-message h3,
+.toast-message p {
+    margin: 10px 0;
+}
+
+.toast-message a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Hidden message */
+.toast-message.top-right {
+    top: -100%;
+    right: 10px;
+}
+
+/* Shown message */
+.toast-message.top-right.shown {
+    top: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .toast-message {
+        max-width: 60%;
+    }
+}
